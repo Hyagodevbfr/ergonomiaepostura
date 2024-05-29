@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4CAF50;
+    text-align: center;
+    overflow: hidden;
+    text-shadow: #333;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('imagens/ginastica-laboral.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    
+}
+
+.header-content {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+section {
+    padding: 4em 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#sectionPage {
+    padding: 4em 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+#voltar {
+    background-color: #4CAF50;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+#voltar:hover {
+    background-color: #45a049;
+}
+#verMais {
+    background-color: #4CAF50;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+#verMais:hover {
+    background-color: #45a049;
+}
+
+#sobre {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+
+#exercicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#exerciciosPage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.exercise {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    flex-basis: 30%;
+    padding: 1em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+#conteudo{
+    text-align: left;
+}
+
+.exercisePage {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    flex-basis: 30%;
+    padding: 1em;
+    text-align: center;
+}
+
+.exercise img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#dicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dica {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    flex-basis: 30%;
+    padding: 1em;
+    text-align: center;
+}
+
+.dica img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    
+    margin-top: 2em;
+}
+
+#contato label {
+    margin-top: 1em;
+}
+
+#contato input, #contato textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+#contato button {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
